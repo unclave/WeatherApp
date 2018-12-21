@@ -34,8 +34,8 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/btnSearch"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="-5dp"
-        android:layout_marginBottom="219dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="258dp"
         android:text="Остановка сервиса" />
 
     <ProgressBar
@@ -71,7 +71,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Фарингейты"
+            android:text="Фаренгейты"
             android:textSize="18sp"
             android:textStyle="bold" />
     </RadioGroup>
