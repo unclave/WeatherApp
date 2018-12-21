@@ -5,8 +5,6 @@ import android.os.Parcelable;
 
 import com.example.stas.weather.Enums.ErrorType;
 
-import java.util.ArrayList;
-
 public class Data implements Parcelable {
     public String err;
     public ErrorType errorType;
