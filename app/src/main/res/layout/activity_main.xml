@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+
+    <EditText
+        android:id="@+id/etCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Омск"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="94dp" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="252dp"
+        android:text="Найти город" />
+
+    <Button
+        android:id="@+id/btnStopService"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnSearch"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-5dp"
+        android:layout_marginBottom="219dp"
+        android:text="Остановка сервиса" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="136dp"
+        android:layout_height="127dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:visibility="invisible" />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etCity"
+        android:layout_centerHorizontal="true"
+        android:checkedButton="@+id/rbCel"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbCel"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="Цельсии"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rbFar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Фарингейты"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+</RelativeLayout>

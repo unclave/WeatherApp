@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="70dp"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="Город: Омск" />
+
+    <TextView
+        android:id="@+id/tvTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvCity"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="130dp"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="Температура: -30 °С" />
+
+    <Button
+        android:id="@+id/btnSetServise"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="116dp"
+        android:text="Запуск сервиса" />
+
+    <TextView
+        android:id="@+id/tvWindSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/tvCity"
+        android:layout_marginTop="191dp"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="Скорость ветра: 21 м/с" />
+
+    <TextView
+        android:id="@+id/tvPressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/icon_pressure"
+        android:layout_alignStart="@+id/tvCity"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="Атм. давление: 755 мм рт.ст." />
+
+    <TextView
+        android:id="@+id/tvHumidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/tvCity"
+        android:layout_marginTop="250dp"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="Влажность воздуха: 59 %" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="51dp"
+        android:text="Назад" />
+
+    <ImageView
+        android:id="@+id/icon_city"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/tvCity"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="17dp"
+        app:srcCompat="@drawable/icon_city" />
+
+    <ImageView
+        android:id="@+id/icon_temp"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/tvTemp"
+        android:layout_alignStart="@+id/icon_city"
+        app:srcCompat="@drawable/icon_temp" />
+
+    <ImageView
+        android:id="@+id/icon_wind"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/tvWindSpeed"
+        android:layout_alignStart="@+id/icon_city"
+        app:srcCompat="@drawable/icon_wind" />
+
+    <ImageView
+        android:id="@+id/icon_water"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/tvHumidity"
+        android:layout_alignStart="@+id/icon_city"
+        app:srcCompat="@drawable/icon_water" />
+
+    <ImageView
+        android:id="@+id/icon_pressure"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_alignStart="@+id/icon_city"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/icon_pressure" />
+
+    <ImageView
+        android:id="@+id/icon_android"
+        android:layout_width="77dp"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="186dp"
+        app:srcCompat="@drawable/icon_android" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="168dp"
+        android:layout_height="107dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="32dp"
+        app:srcCompat="@drawable/icon_cloud" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="70dp"
+        android:layout_height="159dp"
+        android:layout_alignBottom="@+id/icon_android"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="139dp"
+        app:srcCompat="@drawable/icon_umbrella" />
+
+</RelativeLayout>
