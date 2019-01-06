@@ -56,8 +56,8 @@ public class Weather extends AppCompatActivity {
             finish();
         }
         tvCity.setText("Город: " + weather.cityName);
-        if (MainActivity.isCelsius)
-            tvTemp.setText("Температура: " + String.valueOf(weather.temp - 273) + " C");
+        if (MainActivity.isCelsius) //температура приходит в Кельвинах, переводим в Цельсии или Фаренгейты
+            tvTemp.setText("Температура: " + String.valueOf(weather.temp - 273) + " °C");
         else
             tvTemp.setText("Температура: "+ String.valueOf((weather.temp - 273) * (9 / 5) + 32) + " °F");
         tvWindSpeed.setText("Скорость ветра: " + weather.wind_speed + " м/с");

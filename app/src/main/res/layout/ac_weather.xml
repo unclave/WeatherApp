@@ -12,8 +12,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="45dp"
         android:textColor="#ffffff"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -25,7 +25,8 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/tvCity"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="130dp"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="89dp"
         android:textColor="#ffffff"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -44,9 +45,10 @@
         android:id="@+id/tvWindSpeed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/tvCity"
-        android:layout_marginTop="191dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="134dp"
         android:textColor="#ffffff"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -56,8 +58,10 @@
         android:id="@+id/tvPressure"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/icon_pressure"
         android:layout_alignStart="@+id/tvCity"
+        android:layout_alignBottom="@+id/icon_pressure"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="0dp"
         android:textAlignment="center"
         android:textColor="#ffffff"
         android:textSize="18sp"
@@ -68,9 +72,10 @@
         android:id="@+id/tvHumidity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/tvCity"
-        android:layout_marginTop="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="181dp"
         android:textColor="#ffffff"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -92,7 +97,8 @@
         android:layout_alignBottom="@+id/tvCity"
         android:layout_alignParentStart="true"
         android:layout_marginStart="17dp"
-        app:srcCompat="@drawable/icon_city" />
+        android:contentDescription="TODO"
+        app:srcCompat="@drawable/icon_city_v2" />
 
     <ImageView
         android:id="@+id/icon_temp"
@@ -116,41 +122,46 @@
         android:layout_height="35dp"
         android:layout_alignBottom="@+id/tvHumidity"
         android:layout_alignStart="@+id/icon_city"
-        app:srcCompat="@drawable/icon_water" />
+        app:srcCompat="@drawable/icon_water"
+        android:contentDescription="TODO" />
 
     <ImageView
         android:id="@+id/icon_pressure"
         android:layout_width="40dp"
         android:layout_height="35dp"
         android:layout_alignStart="@+id/icon_city"
-        android:layout_centerVertical="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="216dp"
         app:srcCompat="@drawable/icon_pressure" />
 
     <ImageView
         android:id="@+id/icon_android"
-        android:layout_width="77dp"
-        android:layout_height="72dp"
+        android:layout_width="100dp"
+        android:layout_height="94dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="186dp"
+        android:layout_marginBottom="177dp"
         app:srcCompat="@drawable/icon_android" />
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="168dp"
-        android:layout_height="107dp"
-        android:layout_alignParentEnd="true"
+        android:layout_width="131dp"
+        android:layout_height="94dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="0dp"
         app:srcCompat="@drawable/icon_cloud" />
 
     <ImageView
         android:id="@+id/imageView9"
-        android:layout_width="70dp"
-        android:layout_height="159dp"
+        android:layout_width="74dp"
+        android:layout_height="84dp"
         android:layout_alignBottom="@+id/icon_android"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="139dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="49dp"
         app:srcCompat="@drawable/icon_umbrella" />
 
 </RelativeLayout>
